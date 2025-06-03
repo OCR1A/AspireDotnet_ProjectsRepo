@@ -1,0 +1,379 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(40, 40, 40);
+    margin-top: 12vh;
+    user-select: none;
+}
+
+#sign_in_btn{
+    margin-top: 1.5vh;
+    width: 93%;
+    height: 13%;
+    color: whitesmoke;
+    background-color: rgb(60, 60, 60);
+    border-radius: 0.5vw;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#sign_in_btn:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+.top_bar_li a.navbara {
+    display: flex;       /* Hace que el <a> sea un bloque */
+    width: 100%;          /* Que ocupe el ancho completo del <li> */
+    height: 100%;         /* Opcional: que ocupe también el alto completo */
+    justify-content: center;
+    align-items: center;
+}
+
+.navbara{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    z-index: -1;
+}
+
+#filter_section{
+    width: 20vw;
+    height: 83vh;
+    border: 0.3vw solid rgb(100, 100, 100);
+    background-color: rgb(70, 70, 70);
+    border-radius: 0.5vw;
+    margin-left: 1vw;
+    margin-top: 14vh;
+}
+
+/*Carousel initial values*/
+#carousel_images_container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#next_carousel{
+    right: 0; 
+}
+
+.carousel_btn_container{
+    width: 100vw;
+    position: absolute;
+}
+
+.carousel_btn{
+    opacity: 95%;
+    color: rgb(200, 200, 200);
+    border: 0;
+    background-color: rgb(139, 66, 172);
+    position: fixed;
+    z-index: 2;
+    width: 5vw;
+    height: 22vh;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 11%;
+}
+
+.carousel_btn:hover{
+    background-color: rgb(119, 46, 152);
+}
+
+#footer_index{
+    margin: 0;
+}
+
+#portrait_1:hover{
+    opacity: 100%;
+    transition: 2.5s;
+}
+
+#MainBodyContainer{
+    position: relative;
+    overflow: hidden;
+    height: 76vh;
+    width: 100vw;
+}
+
+#carousel_container:hover{
+    opacity: 100%;
+}
+
+#index_banner{
+    height: 6vh;
+    width: 100vw;
+    background-color: rgb(0, 162, 148);
+    display: flex;
+    color: rgb(220, 220, 220);
+    font-size: 1.4em;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#login_password{
+    margin-bottom: 2.5vh;
+}
+
+#send_login_btn{
+    margin-top: 2.5vh;
+    width: 93%;
+    height: 13%;
+    color: whitesmoke;
+    background-color: rgb(50, 50, 228);
+    border-radius: 0.5vw;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#send_login_btn:hover{
+    background-color: rgb(70, 70, 248);  
+}
+
+#sign_in_p{
+    color: rgb(220, 220, 220);
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+#sign_in_text_container{
+    height: 50vh;
+    width: 30vw;
+    margin-bottom: 14vh;
+    margin-right: 1vw;
+}
+
+#sign_in_box{
+    background-color: rgb(60, 60, 60);;
+    height: 50vh;
+    width: 40vw;
+    margin-left: 1vw;
+    border-radius: 0.5vw;
+    border: 0.5vh solid rgb(100, 100, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    color: whitesmoke;
+}
+
+.login_input{
+    padding-left: 1vw;
+    width: 90%;
+    height: 12%;
+    font-size: 1.3em;
+    border-radius: 0.5vw;
+}
+
+#sign_in_container{
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign_in_box p{
+    margin-bottom: 0.6vh;
+    font-size: 1.2em;
+}
+
+#sign_in_page_sizer{
+    height: 5vh;
+    width: 76vw;
+    height: auto;
+}
+
+#portrait_container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing{
+    width: auto;
+    width: 100vw;
+
+}
+
+#logo{
+    width: 25%;
+    height: auto;
+    cursor: pointer;
+    user-select: none;
+    justify-content: center;
+}
+
+#attention{
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+#logo_container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 95%;
+    margin-left: -1vw;
+    width: 20vw;
+    cursor: pointer;
+}
+
+#logo_container_signin{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 95%;
+    margin-left: 1.5vw;
+    width: 20vw;
+    cursor: pointer;
+}
+
+#search{
+    width: 25vw;
+    height: 55%;
+    border: none;   
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    padding-left: 1vw;
+}
+
+#search::placeholder{
+    color: rgb(40, 40, 40);
+    width: 52%;
+    font-size: 1.1em;
+}
+
+input:focus{
+    outline: none;
+}
+
+#go_button{
+    height: 59%;
+    width: 4vw;
+    cursor: pointer;
+    background-color: rgb(139, 66, 172);
+    color: whitesmoke;
+    border: none;
+    border-radius: 0 0.5vw 0.5vw 0;
+    transition-duration: 0.5s;
+    font-size: 1.2em;
+}
+
+#go_button:hover{
+    background-color: rgb(119, 46, 152);
+}
+
+#top_bar_ul{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 32vw;
+}
+
+.top_bar_li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    width: 6vw; /*Aquí*/
+    margin: 1vw;
+    height: 70%;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+}   
+
+.top_bar_li:hover{
+    background-color: rgb(60, 55, 60);
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+}
+
+#top_bar{
+    width: 100vw;
+    height: 12vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 20, 20);
+    color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-size: 0.8em;
+}
+
+.top_bar_div{
+    height: 80%;
+}
+
+#lang{
+    margin-bottom: 0.05vw;
+    padding: 0;
+    width: 6vw;
+    height: 3vw;
+    margin-right: -0.05vw;
+    outline: none;
+    border-radius: 0.8vw 0 0 0.8vw;
+    text-align: center;
+    background-color: rgb(220, 220, 220);
+    color: rgb(50, 50, 50);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#lang:hover{
+    background-color: rgb(200, 200, 200);
+}
+
+#input_top_bar_div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 40vw;
+    margin-left: 4vw;
+}
+
+footer{
+    width: 100vw;
+    height: 12vh;
+    margin-top: 4vh;
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer p{
+    margin-left: 1vw;
+}

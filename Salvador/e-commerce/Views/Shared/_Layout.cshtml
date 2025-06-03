@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/CSS/style.css">
+    <link rel="icon" href="~/images/logo.png" type="image/png">
+    <base href="~/">
+</head>
+<body>
+
+    <nav id="top_bar">
+
+        <div class="top_bar_div">
+            <a asp-controller="Home" asp-action="Index" id="logo_container" class="logo_link">
+                <img src="~/images/logo.png" alt="Logo" id="logo" />
+                <img src="~/images/attention.png" alt="Attention" id="attention" />
+            </a>
+        </div>
+
+        @{
+
+        if(Convert.ToString(ViewContext.RouteData.Values["controller"]) != "Account")
+        {
+
+        <div class="top_bar_div" id="input_top_bar_div">
+
+            <!--Hardcoded part, chance for MySQL query of current product categories-->
+            <form action="#">
+                <select name="Product category" id="lang">
+                <option value="racket">Racket</option>
+                <option value="bags">Bags</option>
+                <option value="clothes">Clothes</option>
+                <option value="shoes">Shoes</option>
+                <option value="accessories">Accesories</option>
+                <option value="gear">Gear</option>
+                <option value="balls">Balls</option>
+                </select>
+            </form>
+            <input type="text" placeholder="Search in e-commerce" id="search" autocomplete="off">  
+            <button id="go_button">Go</button>
+            
+        </div>
+
+        <div class="top_bar_div">
+            <ul id="top_bar_ul">
+                <li class="top_bar_li" id="home_btn">
+                    <a asp-controller="Home" asp-action="Index" class="navbara">Home</a>
+                </li>
+                <li class="top_bar_li" id="shop_btn">
+                    <a asp-controller="Shop" asp-action="Index" class="navbara">Shop</a>
+                </li>
+                <li class="top_bar_li" id="cart_btn">   
+                    <a asp-controller="Cart" asp-action="Index" class="navbara">Cart</a>
+                </li>
+                <li class="top_bar_li" id="login_btn">
+                    <a asp-controller="Account" asp-action="Index" class="navbara">Sign In</a>
+                </li>
+            </ul>
+        </div>  
+
+        }
+        else
+        {
+
+            <div id="sign_in_page_sizer"></div>
+
+        }
+
+        }
+
+    </nav> 
+
+    <main role="main" class="container" id="MainBodyContainer">
+        @RenderBody() <!-- Insert Specific Content of Each View -->
+    </main>
+
+    <footer id="footer_index">
+        <p>Padel e-commerce property of Aspire Systems ©<br>
+            Developer: Salvador Castro Reynoso | 2025
+        </p>
+    </footer>
+
+</body>
+</html>
