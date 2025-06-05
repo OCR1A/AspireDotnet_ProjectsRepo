@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mKS9PFuUiaDCUf7PXLwAlVhnsopdn4KwkC7DtMR1nFE=",
+  "Hash": "adKaZWFlyyhudNhhtTXcchqCjAk37n1rKWZKOz7ZXRs=",
   "Source": "e-commerce",
   "BasePath": "_content/e-commerce",
   "Mode": "Default",
@@ -899,27 +899,6 @@
       "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\ntniai7hfs-iclw9rajpa.gz",
-      "SourceId": "e-commerce",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/e-commerce",
-      "RelativePath": "e-commerce#[.{fingerprint=iclw9rajpa}]?.styles.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\bundle\\e-commerce.styles.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "badlyz747q",
-      "Integrity": "g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\bundle\\e-commerce.styles.css"
-    },
-    {
       "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\p30tdjrc2q-ttgo8qnofa.gz",
       "SourceId": "e-commerce",
       "SourceType": "Discovered",
@@ -1002,27 +981,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
-    },
-    {
-      "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\qn0yqr0dru-iclw9rajpa.gz",
-      "SourceId": "e-commerce",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/e-commerce",
-      "RelativePath": "e-commerce#[.{fingerprint=iclw9rajpa}]!.bundle.scp.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\e-commerce.bundle.scp.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "badlyz747q",
-      "Integrity": "g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\e-commerce.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\qnwnh9igs2-2z0ns9nrw6.gz",
@@ -1277,12 +1235,12 @@
       "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-4thntl4nbp.gz",
+      "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-39yxydvj7r.gz",
       "SourceId": "e-commerce",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/e-commerce",
-      "RelativePath": "css/style#[.{fingerprint=4thntl4nbp}]?.css.gz",
+      "RelativePath": "css/style#[.{fingerprint=39yxydvj7r}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1291,8 +1249,8 @@
       "RelatedAsset": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\style.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "51ex610dlg",
-      "Integrity": "SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps=",
+      "Fingerprint": "8ln6m1xkwi",
+      "Integrity": "7EYZ54KDPPBzYF/HmvWULpWQjEROkhreeg9j3oRFEQM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\style.css"
@@ -1382,48 +1340,6 @@
       "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\bundle\\e-commerce.styles.css",
-      "SourceId": "e-commerce",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/e-commerce",
-      "RelativePath": "e-commerce#[.{fingerprint}]?.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "iclw9rajpa",
-      "Integrity": "EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\bundle\\e-commerce.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\e-commerce.bundle.scp.css",
-      "SourceId": "e-commerce",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/e-commerce",
-      "RelativePath": "e-commerce#[.{fingerprint}]!.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "iclw9rajpa",
-      "Integrity": "EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\e-commerce.bundle.scp.css"
-    },
-    {
       "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\site.css",
       "SourceId": "e-commerce",
       "SourceType": "Discovered",
@@ -1459,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4thntl4nbp",
-      "Integrity": "GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=",
+      "Fingerprint": "39yxydvj7r",
+      "Integrity": "p5EunBusLEgdMIE4qS6KSeLRsIXKZxJuK/k42Qo7Iis=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
@@ -3236,13 +3152,13 @@
       ]
     },
     {
-      "Route": "css/style.4thntl4nbp.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-4thntl4nbp.gz",
+      "Route": "css/style.39yxydvj7r.css",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-39yxydvj7r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000483558994"
+          "Quality": "0.000466200466"
         }
       ],
       "ResponseHeaders": [
@@ -3252,15 +3168,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2067"
+          "Value": "2144"
         },
         {
           "Name": "ETag",
-          "Value": "\"SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps=\""
+          "Value": "\"7EYZ54KDPPBzYF/HmvWULpWQjEROkhreeg9j3oRFEQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
+          "Value": "Thu, 05 Jun 2025 19:29:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3280,13 +3196,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=\""
+          "Value": "W/\"p5EunBusLEgdMIE4qS6KSeLRsIXKZxJuK/k42Qo7Iis=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4thntl4nbp"
+          "Value": "39yxydvj7r"
         },
         {
           "Name": "label",
@@ -3294,12 +3210,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE="
+          "Value": "sha256-p5EunBusLEgdMIE4qS6KSeLRsIXKZxJuK/k42Qo7Iis="
         }
       ]
     },
     {
-      "Route": "css/style.4thntl4nbp.css",
+      "Route": "css/style.39yxydvj7r.css",
       "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3309,7 +3225,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10050"
+          "Value": "11242"
         },
         {
           "Name": "Content-Type",
@@ -3317,11 +3233,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=\""
+          "Value": "\"p5EunBusLEgdMIE4qS6KSeLRsIXKZxJuK/k42Qo7Iis=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
+          "Value": "Thu, 05 Jun 2025 19:29:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3331,7 +3247,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4thntl4nbp"
+          "Value": "39yxydvj7r"
         },
         {
           "Name": "label",
@@ -3339,13 +3255,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE="
+          "Value": "sha256-p5EunBusLEgdMIE4qS6KSeLRsIXKZxJuK/k42Qo7Iis="
         }
       ]
     },
     {
-      "Route": "css/style.4thntl4nbp.css.gz",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-4thntl4nbp.gz",
+      "Route": "css/style.39yxydvj7r.css.gz",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-39yxydvj7r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3354,7 +3270,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2067"
+          "Value": "2144"
         },
         {
           "Name": "Content-Type",
@@ -3362,11 +3278,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps=\""
+          "Value": "\"7EYZ54KDPPBzYF/HmvWULpWQjEROkhreeg9j3oRFEQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
+          "Value": "Thu, 05 Jun 2025 19:29:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3384,7 +3300,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4thntl4nbp"
+          "Value": "39yxydvj7r"
         },
         {
           "Name": "label",
@@ -3392,18 +3308,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps="
+          "Value": "sha256-7EYZ54KDPPBzYF/HmvWULpWQjEROkhreeg9j3oRFEQM="
         }
       ]
     },
     {
       "Route": "css/style.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-4thntl4nbp.gz",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-39yxydvj7r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000483558994"
+          "Quality": "0.000466200466"
         }
       ],
       "ResponseHeaders": [
@@ -3413,15 +3329,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2067"
+          "Value": "2144"
         },
         {
           "Name": "ETag",
-          "Value": "\"SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps=\""
+          "Value": "\"7EYZ54KDPPBzYF/HmvWULpWQjEROkhreeg9j3oRFEQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
+          "Value": "Thu, 05 Jun 2025 19:29:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3441,13 +3357,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=\""
+          "Value": "W/\"p5EunBusLEgdMIE4qS6KSeLRsIXKZxJuK/k42Qo7Iis=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE="
+          "Value": "sha256-p5EunBusLEgdMIE4qS6KSeLRsIXKZxJuK/k42Qo7Iis="
         }
       ]
     },
@@ -3462,7 +3378,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10050"
+          "Value": "11242"
         },
         {
           "Name": "Content-Type",
@@ -3470,11 +3386,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=\""
+          "Value": "\"p5EunBusLEgdMIE4qS6KSeLRsIXKZxJuK/k42Qo7Iis=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
+          "Value": "Thu, 05 Jun 2025 19:29:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3484,13 +3400,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE="
+          "Value": "sha256-p5EunBusLEgdMIE4qS6KSeLRsIXKZxJuK/k42Qo7Iis="
         }
       ]
     },
     {
       "Route": "css/style.css.gz",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-4thntl4nbp.gz",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-39yxydvj7r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3499,7 +3415,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2067"
+          "Value": "2144"
         },
         {
           "Name": "Content-Type",
@@ -3507,11 +3423,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps=\""
+          "Value": "\"7EYZ54KDPPBzYF/HmvWULpWQjEROkhreeg9j3oRFEQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
+          "Value": "Thu, 05 Jun 2025 19:29:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3529,603 +3445,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.bundle.scp.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\qn0yqr0dru-iclw9rajpa.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.011494252874"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.bundle.scp.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\e-commerce.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "66"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\qn0yqr0dru-iclw9rajpa.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.iclw9rajpa.bundle.scp.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\qn0yqr0dru-iclw9rajpa.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.011494252874"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iclw9rajpa"
-        },
-        {
-          "Name": "label",
-          "Value": "e-commerce.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.iclw9rajpa.bundle.scp.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\e-commerce.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "66"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iclw9rajpa"
-        },
-        {
-          "Name": "label",
-          "Value": "e-commerce.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.iclw9rajpa.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\qn0yqr0dru-iclw9rajpa.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iclw9rajpa"
-        },
-        {
-          "Name": "label",
-          "Value": "e-commerce.bundle.scp.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.iclw9rajpa.styles.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\ntniai7hfs-iclw9rajpa.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.011494252874"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iclw9rajpa"
-        },
-        {
-          "Name": "label",
-          "Value": "e-commerce.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.iclw9rajpa.styles.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\bundle\\e-commerce.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "66"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iclw9rajpa"
-        },
-        {
-          "Name": "label",
-          "Value": "e-commerce.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.iclw9rajpa.styles.css.gz",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\ntniai7hfs-iclw9rajpa.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iclw9rajpa"
-        },
-        {
-          "Name": "label",
-          "Value": "e-commerce.styles.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.styles.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\ntniai7hfs-iclw9rajpa.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.011494252874"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.styles.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\bundle\\e-commerce.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "66"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM="
-        }
-      ]
-    },
-    {
-      "Route": "e-commerce.styles.css.gz",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\ntniai7hfs-iclw9rajpa.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "86"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 18:14:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-g3Rsf4Xq64pPwAmuxj5cQiRLZLdOy59J3BcdRyRyKPU="
+          "Value": "sha256-7EYZ54KDPPBzYF/HmvWULpWQjEROkhreeg9j3oRFEQM="
         }
       ]
     },

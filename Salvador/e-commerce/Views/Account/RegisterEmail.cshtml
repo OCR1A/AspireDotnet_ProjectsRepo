@@ -10,7 +10,7 @@
         <div id="email_register_box_child">
             <h2 class="email_register_text">Enter your e-mail</h2>
             <p class="email_register_text" id="email_register_text_extra_id">Ensure having access to it.</p>
-            <form asp-controller="Account" asp-action="EmailRegister" method="post" id="email_register_form">
+            <form asp-controller="Account" asp-action="RegisterHub" method="post" id="email_register_form">
                 <input type="text" class="email_register_input" name="Email" value="@Model?.Email" required>
                 <label for="terms_of_service_checkbox_id" id="email_register_checkbox_label">
                     <input type="checkbox" name="terms_of_service_checkbox" id="terms_of_service_checkbox_id" required>

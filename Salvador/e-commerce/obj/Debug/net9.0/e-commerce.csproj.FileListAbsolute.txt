@@ -14,9 +14,7 @@ C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\e-commerc
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\e-commerce.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\e-commerce.RazorAssemblyInfo.cache
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\e-commerce.RazorAssemblyInfo.cs
-C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\scopedcss\bundle\e-commerce.styles.css
-C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\scopedcss\projectbundle\e-commerce.bundle.scp.css
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\9xyn0vrd6w-61n19gt1b8.gz
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\8t61pqwjex-xtxxf3hu2r.gz
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\z16sqxuhnv-bqjiyaj88i.gz
@@ -92,8 +90,6 @@ C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\refint\e-
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\e-commerce.pdb
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\e-commerce.genruntimeconfig.cache
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\ref\e-commerce.dll
-C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\ntniai7hfs-iclw9rajpa.gz
-C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\qn0yqr0dru-iclw9rajpa.gz
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -170,4 +166,4 @@ C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\zh-Hant\M
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\MySqlConnector.dll
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\114385iq2y-ptudif7w8r.gz
-C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\w1dja932ih-4thntl4nbp.gz
+C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\w1dja932ih-39yxydvj7r.gz

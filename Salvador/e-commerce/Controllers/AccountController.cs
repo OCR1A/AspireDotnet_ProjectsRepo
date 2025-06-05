@@ -40,22 +40,35 @@ namespace IdentityManager.Controllers
 
         }
 
-        [Route("/register")]
-        public IActionResult RegisterEmail()
-        {
-            return View();
-        }
-
+        //Register account controllers
         [Route("/register-hub")]
         public IActionResult RegisterHub()
         {
             return View();
         }
 
-        [Route("/mail/registered")]
-        public IActionResult EmailRegister()
+        [Route("/register-email")]
+        public IActionResult RegisterEmail()
         {
-            return Content("Email registered successfully!", "text/html");
+            return View();
+        }
+
+        [Route("/register-name")]
+        public IActionResult RegisterName()
+        {
+            return Content("<h2>Register name:</h2>", "text/html");
+        }
+
+        [Route("/register-cellphone")]
+        public IActionResult RegisterCellphone()
+        {
+            return Content("<h2>Register Cellphone:</h2>", "text/html");
+        }
+
+        [Route("/register-password")]
+        public IActionResult RegisterPassword()
+        {
+            return Content("<h2>Register Password:</h2>", "text/html");
         }
 
     }

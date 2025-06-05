@@ -287,7 +287,7 @@ input:focus{
 
 .email_register_text{
     padding: 0;
-    margin-top: 1%; /*Modify this*/
+    margin-top: 1%; 
     margin-left: 0.5%;
 }
 
@@ -295,10 +295,72 @@ input:focus{
     margin-top: -3%;
 }
 
-#email_register_form{
+#email_register_form,
+#hub_email_form,
+#hub_name_form,
+#hub_cell_phone_form,
+#hub_password_form{
     all: unset;
     display: contents;
 }
+
+.register_hub_btn{
+    margin-top: 2.5vh;
+    width: 100%;
+    height: 13%;
+    color: whitesmoke;
+    background-color: rgb(50, 50, 228);
+    border-radius: 0.5vw;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#register_hub_container{
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register_hub_box{
+    background-color: rgb(60, 60, 60);;
+    height: 50vh;
+    width: 40vw;
+    margin-left: 1vw;
+    border-radius: 0.5vw;
+    border: 0.5vh solid rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; 
+    color: whitesmoke;
+}
+
+#register_hub_box p{
+    margin-bottom: 0.6vh;
+    font-size: 1.2em;
+}
+
+#register_hub_box_child{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+    width: 90%;
+    height: 100%;
+}
+
+.register_hub_text{
+    padding: 0;
+    margin-top: 1%; /*Modify this*/
+    margin-left: 0.5%;
+}
+
+
 
 #email_register_btn{
     margin-top: 2.5vh;

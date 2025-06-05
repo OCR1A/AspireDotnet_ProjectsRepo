@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\e-commerce.bundle.scp.css",
-      "PackagePath": "staticwebassets\\e-commerce.iclw9rajpa.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

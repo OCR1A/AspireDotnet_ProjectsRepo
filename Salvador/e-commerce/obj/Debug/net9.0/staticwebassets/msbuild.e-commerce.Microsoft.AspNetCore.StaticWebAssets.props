@@ -30,29 +30,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4thntl4nbp</Fingerprint>
-      <Integrity>GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=</Integrity>
+      <Fingerprint>39yxydvj7r</Fingerprint>
+      <Integrity>p5EunBusLEgdMIE4qS6KSeLRsIXKZxJuK/k42Qo7Iis=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\e-commerce.iclw9rajpa.bundle.scp.css'))">
-      <SourceType>Package</SourceType>
-      <SourceId>e-commerce</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/e-commerce</BasePath>
-      <RelativePath>e-commerce.iclw9rajpa.bundle.scp.css</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>Reference</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName>ScopedCss</AssetTraitName>
-      <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>iclw9rajpa</Fingerprint>
-      <Integrity>EolTrubxbowEDknQUJODJPDixO743VRUlv+YXGiz2xM=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\e-commerce.iclw9rajpa.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))">
       <SourceType>Package</SourceType>
