@@ -21,7 +21,8 @@
 
         @{
 
-        if(Convert.ToString(ViewContext.RouteData.Values["controller"]) != "Account")
+        if(Convert.ToString(ViewContext.RouteData.Values["controller"]) != "Account"
+            && Convert.ToString(ViewContext.RouteData.Values["controller"]) != "Legal")
         {
 
         <div class="top_bar_div" id="input_top_bar_div">
@@ -45,17 +46,17 @@
 
         <div class="top_bar_div">
             <ul id="top_bar_ul">
-                <li class="top_bar_li" id="home_btn">
+                <li class="top_bar_li" id="home_nav_btn">
                     <a asp-controller="Home" asp-action="Index" class="navbara">Home</a>
                 </li>
-                <li class="top_bar_li" id="shop_btn">
+                <li class="top_bar_li" id="shop_nav_btn">
                     <a asp-controller="Shop" asp-action="Index" class="navbara">Shop</a>
                 </li>
-                <li class="top_bar_li" id="cart_btn">   
+                <li class="top_bar_li" id="cart_nav_btn">   
                     <a asp-controller="Cart" asp-action="Index" class="navbara">Cart</a>
                 </li>
-                <li class="top_bar_li" id="login_btn">
-                    <a asp-controller="Account" asp-action="Index" class="navbara">Sign In</a>
+                <li class="top_bar_li" id="sign_in_nav_btn">
+                    <a asp-controller="Account" asp-action="SignIn" class="navbara">Sign In</a>
                 </li>
             </ul>
         </div>  

@@ -1,0 +1,26 @@
+@model IdentityManager.Models.ApplicationUser
+@{
+
+    ViewData["Title"] = "Register e-mail";
+
+}
+
+<div id="email_register_container">
+    <div id="email_register_box">
+        <div id="email_register_box_child">
+            <h2 class="email_register_text">Enter your e-mail</h2>
+            <p class="email_register_text" id="email_register_text_extra_id">Ensure having access to it.</p>
+            <form asp-controller="Account" asp-action="EmailRegister" method="post" id="email_register_form">
+                <input type="text" class="email_register_input" name="Email" value="@Model?.Email" required>
+                <label for="terms_of_service_checkbox_id" id="email_register_checkbox_label">
+                    <input type="checkbox" name="terms_of_service_checkbox" id="terms_of_service_checkbox_id" required>
+                    <p id="terms_and_conditions_p">
+                        I Agree <span class="terms_privacy_text"><a asp-controller="Legal" asp-action="Terms" class="terms_privacy_text" target="_blank" onclick="event.stopPropagation()">Terms and Conditions</a></span> and authorize using my data
+                        according to the <span class="terms_privacy_text"><a asp-controller="Legal" asp-action="Privacy" class="terms_privacy_text" target="_blank" onclick="event.stopPropagation()">Privacy Policy</a></span>.
+                    </p>
+                </label>
+                <button id="email_register_btn" type="submit">Continue</button> 
+            </form>
+        </div>
+    </div>
+</div>

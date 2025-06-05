@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "76/TFWpGQJRGhnWEFeiBK+bR1QwwqXVGi0k1QoJ+CU8=",
+  "Hash": "mKS9PFuUiaDCUf7PXLwAlVhnsopdn4KwkC7DtMR1nFE=",
   "Source": "e-commerce",
   "BasePath": "_content/e-commerce",
   "Mode": "Default",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\114385iq2y-b9sayid5wm.gz",
+      "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\114385iq2y-ptudif7w8r.gz",
       "SourceId": "e-commerce",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/e-commerce",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=ptudif7w8r}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0suozzrugb",
-      "Integrity": "0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=",
+      "Fingerprint": "d4gz3p376c",
+      "Integrity": "XRPXLKiN6vlcoeAu7RBf8VHnUwF+tU1smj3w4QcA/8U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\site.css"
@@ -1277,12 +1277,12 @@
       "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-hlfkwhcope.gz",
+      "Identity": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-4thntl4nbp.gz",
       "SourceId": "e-commerce",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/e-commerce",
-      "RelativePath": "css/style#[.{fingerprint=hlfkwhcope}]?.css.gz",
+      "RelativePath": "css/style#[.{fingerprint=4thntl4nbp}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1291,8 +1291,8 @@
       "RelatedAsset": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\style.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "pbhvl4azz5",
-      "Integrity": "dY47gKcdOyYewPLsxenUcK15V4OKHPQamu9wmqf2ZBo=",
+      "Fingerprint": "51ex610dlg",
+      "Integrity": "SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\style.css"
@@ -1438,8 +1438,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "ptudif7w8r",
+      "Integrity": "s8TDGVHroH/mKsxFJcpVwwOLZdR7VPzDQlr8fEeqsew=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "hlfkwhcope",
-      "Integrity": "9U9jvU+YdV82zubRZ60qZ9haCoKDT327nBRmNINp7xo=",
+      "Fingerprint": "4thntl4nbp",
+      "Integrity": "GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
@@ -2938,13 +2938,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\114385iq2y-b9sayid5wm.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\114385iq2y-ptudif7w8r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.002967359050"
         }
       ],
       "ResponseHeaders": [
@@ -2954,19 +2954,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "336"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"XRPXLKiN6vlcoeAu7RBf8VHnUwF+tU1smj3w4QcA/8U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 16:29:33 GMT"
+          "Value": "Wed, 04 Jun 2025 17:06:50 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -2982,26 +2982,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"s8TDGVHroH/mKsxFJcpVwwOLZdR7VPzDQlr8fEeqsew=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "b9sayid5wm"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-s8TDGVHroH/mKsxFJcpVwwOLZdR7VPzDQlr8fEeqsew="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.css",
       "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3011,7 +3003,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "690"
         },
         {
           "Name": "Content-Type",
@@ -3019,11 +3011,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"s8TDGVHroH/mKsxFJcpVwwOLZdR7VPzDQlr8fEeqsew=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 16:29:33 GMT"
+          "Value": "Wed, 04 Jun 2025 17:06:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s8TDGVHroH/mKsxFJcpVwwOLZdR7VPzDQlr8fEeqsew="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\114385iq2y-ptudif7w8r.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "336"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XRPXLKiN6vlcoeAu7RBf8VHnUwF+tU1smj3w4QcA/8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Jun 2025 17:06:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRPXLKiN6vlcoeAu7RBf8VHnUwF+tU1smj3w4QcA/8U="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.ptudif7w8r.css",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\114385iq2y-ptudif7w8r.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002967359050"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "336"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XRPXLKiN6vlcoeAu7RBf8VHnUwF+tU1smj3w4QcA/8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Jun 2025 17:06:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"s8TDGVHroH/mKsxFJcpVwwOLZdR7VPzDQlr8fEeqsew=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ptudif7w8r"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s8TDGVHroH/mKsxFJcpVwwOLZdR7VPzDQlr8fEeqsew="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.ptudif7w8r.css",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "690"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s8TDGVHroH/mKsxFJcpVwwOLZdR7VPzDQlr8fEeqsew=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Jun 2025 17:06:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3033,7 +3170,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "ptudif7w8r"
         },
         {
           "Name": "label",
@@ -3041,13 +3178,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-s8TDGVHroH/mKsxFJcpVwwOLZdR7VPzDQlr8fEeqsew="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\114385iq2y-b9sayid5wm.gz",
+      "Route": "css/site.ptudif7w8r.css.gz",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\114385iq2y-ptudif7w8r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3056,7 +3193,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "336"
         },
         {
           "Name": "Content-Type",
@@ -3064,11 +3201,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"XRPXLKiN6vlcoeAu7RBf8VHnUwF+tU1smj3w4QcA/8U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 16:29:33 GMT"
+          "Value": "Wed, 04 Jun 2025 17:06:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3086,7 +3223,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "ptudif7w8r"
         },
         {
           "Name": "label",
@@ -3094,18 +3231,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-XRPXLKiN6vlcoeAu7RBf8VHnUwF+tU1smj3w4QcA/8U="
         }
       ]
     },
     {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\114385iq2y-b9sayid5wm.gz",
+      "Route": "css/style.4thntl4nbp.css",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-4thntl4nbp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.000483558994"
         }
       ],
       "ResponseHeaders": [
@@ -3115,19 +3252,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "2067"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 16:29:33 GMT"
+          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3143,155 +3280,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "4thntl4nbp"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE="
         }
       ]
     },
     {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "667"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 16:29:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\114385iq2y-b9sayid5wm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "318"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 16:29:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-hlfkwhcope.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000636537237"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1570"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dY47gKcdOyYewPLsxenUcK15V4OKHPQamu9wmqf2ZBo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 23:09:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"9U9jvU+YdV82zubRZ60qZ9haCoKDT327nBRmNINp7xo=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9U9jvU+YdV82zubRZ60qZ9haCoKDT327nBRmNINp7xo="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.css",
+      "Route": "css/style.4thntl4nbp.css",
       "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3301,7 +3309,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6838"
+          "Value": "10050"
         },
         {
           "Name": "Content-Type",
@@ -3309,121 +3317,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9U9jvU+YdV82zubRZ60qZ9haCoKDT327nBRmNINp7xo=\""
+          "Value": "\"GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 23:09:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9U9jvU+YdV82zubRZ60qZ9haCoKDT327nBRmNINp7xo="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.css.gz",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-hlfkwhcope.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1570"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dY47gKcdOyYewPLsxenUcK15V4OKHPQamu9wmqf2ZBo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 23:09:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-dY47gKcdOyYewPLsxenUcK15V4OKHPQamu9wmqf2ZBo="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.hlfkwhcope.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-hlfkwhcope.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000636537237"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1570"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dY47gKcdOyYewPLsxenUcK15V4OKHPQamu9wmqf2ZBo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 23:09:54 GMT"
+          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"9U9jvU+YdV82zubRZ60qZ9haCoKDT327nBRmNINp7xo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hlfkwhcope"
+          "Value": "4thntl4nbp"
         },
         {
           "Name": "label",
@@ -3431,13 +3339,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9U9jvU+YdV82zubRZ60qZ9haCoKDT327nBRmNINp7xo="
+          "Value": "sha256-GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE="
         }
       ]
     },
     {
-      "Route": "css/style.hlfkwhcope.css",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\style.css",
+      "Route": "css/style.4thntl4nbp.css.gz",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-4thntl4nbp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3446,7 +3354,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6838"
+          "Value": "2067"
         },
         {
           "Name": "Content-Type",
@@ -3454,56 +3362,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9U9jvU+YdV82zubRZ60qZ9haCoKDT327nBRmNINp7xo=\""
+          "Value": "\"SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 23:09:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hlfkwhcope"
-        },
-        {
-          "Name": "label",
-          "Value": "css/style.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9U9jvU+YdV82zubRZ60qZ9haCoKDT327nBRmNINp7xo="
-        }
-      ]
-    },
-    {
-      "Route": "css/style.hlfkwhcope.css.gz",
-      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-hlfkwhcope.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1570"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dY47gKcdOyYewPLsxenUcK15V4OKHPQamu9wmqf2ZBo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 02 Jun 2025 23:09:54 GMT"
+          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3521,7 +3384,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hlfkwhcope"
+          "Value": "4thntl4nbp"
         },
         {
           "Name": "label",
@@ -3529,7 +3392,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dY47gKcdOyYewPLsxenUcK15V4OKHPQamu9wmqf2ZBo="
+          "Value": "sha256-SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-4thntl4nbp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000483558994"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2067"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10050"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GJUVUrjRS6bCz4ld9tFpNNXjSaOsTLMhRUobmG5ivQE="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css.gz",
+      "AssetFile": "C:\\Users\\salvador.castro.ASPIRESYS\\Desktop\\e-commerce\\obj\\Debug\\net9.0\\compressed\\w1dja932ih-4thntl4nbp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2067"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Jun 2025 03:19:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SW/a420ikYoJMeXf1sMWXf2eLfSUNcHGLF2M19HTNps="
         }
       ]
     },

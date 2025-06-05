@@ -1,0 +1,17 @@
+@model IdentityManager.Models.ApplicationUser
+@{
+
+    ViewData["Title"] = "Register e-mail";
+
+}
+
+<div id="email_register_container">
+    <div id="email_register_box">
+        <div id="email_register_box_child">
+            <h2 class="email_register_text">Register Hub</h2>
+            <form asp-controller="Account" asp-action="RegisterEmail" method="post" id="email_register_form">
+                <button id="email_register_btn" type="submit">Continue</button> 
+            </form>
+        </div>
+    </div> 
+</div>

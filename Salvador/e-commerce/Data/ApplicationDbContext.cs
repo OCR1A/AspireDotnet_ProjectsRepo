@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using ApplicationUserNamespace;
+using IdentityManager;
+using IdentityManager.Models;
 using Microsoft.EntityFrameworkCore;
-using ApplicationUserNamespace.Model;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace IdentityManager.Data
 {
@@ -12,8 +13,10 @@ namespace IdentityManager.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-
         }
+
+        //Custom entities
+        //public DbSet<ApplicationUser> MyProperty { get; set; }
 
     }
 

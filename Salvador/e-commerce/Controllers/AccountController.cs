@@ -1,20 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
-using ApplicationUserNamespace.Model;
+using IdentityManager.Models;
 
-namespace AccountNamespace.Controllers
+namespace IdentityManager.Controllers
 {
 
     public class AccountController : Controller
     {
 
         [Route("/sign-in")]
-        public IActionResult Index()
+        public IActionResult SignIn()
         {
             return View();
         }
 
         [HttpPost("/sign-in")]
-        public IActionResult Login(ApplicationUser   myPerson)
+        public IActionResult SignIn(ApplicationUser myPerson)
         {
 
             if (!ModelState.IsValid)
@@ -38,6 +38,24 @@ namespace AccountNamespace.Controllers
             Console.WriteLine($"User: {myPerson.Email} logged in successfully!");
             return Json(myPerson);
 
+        }
+
+        [Route("/register")]
+        public IActionResult RegisterEmail()
+        {
+            return View();
+        }
+
+        [Route("/register-hub")]
+        public IActionResult RegisterHub()
+        {
+            return View();
+        }
+
+        [Route("/mail/registered")]
+        public IActionResult EmailRegister()
+        {
+            return Content("Email registered successfully!", "text/html");
         }
 
     }

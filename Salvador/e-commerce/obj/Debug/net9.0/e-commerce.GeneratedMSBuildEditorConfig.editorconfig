@@ -9,53 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = e_commerce
 build_property.RootNamespace = e_commerce
-build_property.ProjectDir = C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\
+build_property.ProjectDir = c:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce
+build_property.MSBuildProjectDirectory = c:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Account/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Account/RegisterEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckVtYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Cart/Index.cshtml]
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Account/RegisterHub.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlckh1Yi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Account/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Home/Index.cshtml]
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Home/Privacy.cshtml]
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Shared/Error.cshtml]
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Legal/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Legal/Terms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxcVGVybXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Shop/Index.cshtml]
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Shop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/_ViewImports.cshtml]
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/_ViewStart.cshtml]
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Shared/_Layout.cshtml]
+[c:/Users/salvador.castro.ASPIRESYS/Desktop/e-commerce/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-cv27ybvojd

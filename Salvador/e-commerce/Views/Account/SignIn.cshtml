@@ -1,0 +1,26 @@
+﻿@model IdentityManager.Models.ApplicationUser
+@{
+
+    ViewData["Title"] = "Sign in";
+
+}
+
+<div id="sign_in_container">
+    <div id="sign_in_text_container">
+        <p id="sign_in_p">Enter your email to sign in</p>
+    </div>
+    <div id="sign_in_box">
+        <div id="sign_in_box_child">
+            <!--Sign In form-->
+            <form asp-controller="Account" asp-action="SignIn" method="post" id="sign_in_form">
+                <p class="sign_in_text">E-mail</p>
+                <input type="text" id="sign_in_mail" class="sign_in_input" name="Email" value="@Model?.Email" required>
+                <p class="sign_in_text">Password</p>
+                <input type="password" id="sign_in_password" class="sign_in_input" name="passwordHash" required> 
+                <button id="send_sign_in_btn" type="submit">Continue</button> 
+            </form>
+            <!--Redirect to create account-->
+            <a asp-controller="Account" asp-action="RegisterHub" id="sign_in_register_btn">Create Account</a>
+        </div>
+    </div>
+</div>
