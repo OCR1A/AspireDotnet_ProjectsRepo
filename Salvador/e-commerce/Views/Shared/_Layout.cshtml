@@ -66,6 +66,7 @@
         {
 
             <div id="sign_in_page_sizer"></div>
+            <partial name="_LoginPartialView"></partial>
 
         }
 
@@ -82,6 +83,8 @@
             Developer: Salvador Castro Reynoso | 2025
         </p>
     </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
 
 </body>
 </html>

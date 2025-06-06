@@ -1,4 +1,50 @@
-﻿@model IdentityManager.Models.ApplicationUser
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Sign In";
+}
+
+<div id="sign_in_container">
+    <div id="full_register_p_container">
+        <p id="sign_in_p">Enter your email<br>to sign in</p>
+    </div>
+    <div id="full_register_container"></div>
+        <div id="full_register_box">
+            <div id="full_register_box_child">
+                <h1 class="text-primary text-center pt-2" id="full_register_create_new_account_title">Sign In</h1>
+                <form method="post" asp-controller="Account" asp-action="SignIn" id="full_register_form">
+
+                    <div class="full_register_input_spacer_div">
+                        <label asp-for="Email" class="col-12"></label>
+                        <input asp-for="Email" class="full_register_input">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div id="password_container">
+                        <label asp-for="Password" class="col-12"></label>
+                        <input asp-for="Password" class="full_register_input">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <button id="send_full_register_btn" type="submit">Continue</button> 
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+}
+
+
+
+
+@*
+Previous form
+@model IdentityManager.Models.ApplicationUser
 @{
 
     ViewData["Title"] = "Sign in";
@@ -20,7 +66,10 @@
                 <button id="send_sign_in_btn" type="submit">Continue</button> 
             </form>
             <!--Redirect to create account-->
-            <a asp-controller="Account" asp-action="RegisterHub" id="sign_in_register_btn">Create Account</a>
+            <a asp-controller="Account" asp-action="FullRegister" id="sign_in_register_btn">Create Account</a>
         </div>
     </div>
 </div>
+
+
+*@

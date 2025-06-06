@@ -8,6 +8,9 @@ namespace IdentityManager.Models
 
     public class ApplicationUser : IdentityUser
     {
+        [Required]
+        public string? Name { get; set; }
+        public DateTime DateCreated { get; set; }
     }
 
 }

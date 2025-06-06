@@ -1,0 +1,81 @@
+@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div id="full_register_container">
+    <div id="full_register_box">
+        <div id="full_register_box_child">
+            <h1 class="text-primary text-center pt-2" id="full_register_create_new_account_title">Create New Account</h1>
+            <form method="post" asp-controller="Account" asp-action="Register" id="full_register_form">
+                    
+                <!--<p id="full_register_create_new_account_title">Create New Account</p>-->
+                <!--<div asp-validation-summary="All" class="text-danger"></div> THIS CONTAINER SHOWS ALERT MESSAGES-->
+
+                <div class="full_register_input_spacer_div">
+                    <label asp-for="Email" class="col-12"></label>
+                    <input asp-for="Email" class="full_register_input">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="full_register_input_spacer_div">
+                    <label asp-for="Name" class="col-12" id="full_register_name_input"></label>
+                    <input asp-for="Name" class="full_register_input">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div id="password_and_verification_container" class="full_register_input_spacer_div">
+                    <div id="password_container">
+                        <label asp-for="Password" class="col-12"></label>
+                        <input asp-for="Password" class="full_register_input">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <div id="confirm_password_container">
+                        <label asp-for="ConfirmPassword" class="col-12"></label>
+                        <input asp-for="ConfirmPassword" class="full_register_input">
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <button id="send_full_register_btn" type="submit">Continue</button> 
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+}
+
+<!--Previous form without backend implementation-->
+@*@model RegisterViewModel
+@{
+
+    ViewData["Title"] = "Register";
+
+}
+
+<div id="full_register_container">
+    <h1 id="full_register_h1">Register</h1>
+    <div id="full_register_box">
+        <div id="full_register_box_child">
+
+            <form method="post" asp-controller="Account" asp-action="FullRegister" id="full_register_form">
+                <p class="full_register_text">E-mail</p>
+                <input type="text" id="full_register_mail" class="full_register_input" name="Email" asp-for="Email">
+                <p class="full_register_text">Name</p>
+                <input type="text" id="full_register_name" class="full_register_input" name="Name" asp-for="Name">
+                <p class="full_register_text">Password</p>
+                <input type="text" id="full_register_password" class="full_register_input" name="Password" asp-for="Password">
+                <p class="full_register_text">Confirm Password</p>
+                <input type="text" id="full_register_confirm_password" class="full_register_input" name="ConfirmPassword" asp-for="ConfirmPassword">
+                <button id="send_full_register_btn" type="submit">Continue</button> 
+            </form>
+
+        </div>
+    </div>
+</div>*@
