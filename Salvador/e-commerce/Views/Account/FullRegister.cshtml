@@ -7,6 +7,7 @@
     <div id="full_register_box">
         <div id="full_register_box_child">
             <h1 class="text-primary text-center pt-2" id="full_register_create_new_account_title">Create New Account</h1>
+            <div asp-validation-summary="ModelOnly" class="text-danger no-bullets" id="full_register_validation_summary_div"></div>
             <form method="post" asp-controller="Account" asp-action="Register" id="full_register_form">
                     
                 <!--<p id="full_register_create_new_account_title">Create New Account</p>-->
@@ -27,14 +28,14 @@
                 <div id="password_and_verification_container" class="full_register_input_spacer_div">
                     <div id="password_container">
                         <label asp-for="Password" class="col-12"></label>
-                        <input asp-for="Password" class="full_register_input">
+                        <input asp-for="Password" class="full_register_password_input">
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
 
                     <div id="confirm_password_container">
-                        <label asp-for="ConfirmPassword" class="col-12"></label>
-                        <input asp-for="ConfirmPassword" class="full_register_input">
-                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        <label asp-for="ConfirmPassword" class="col-12" id="confirm_password_label"></label>
+                        <input asp-for="ConfirmPassword" class="full_register_password_input" id="confirm_password_input">
+                        <span asp-validation-for="ConfirmPassword" class="text-danger" id="confirm_password_span"></span>
                     </div>
                 </div>
 

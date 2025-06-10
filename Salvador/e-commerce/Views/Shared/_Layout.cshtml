@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityManager.Models.ApplicationUser> SignInManager
+@inject UserManager<IdentityManager.Models.ApplicationUser> UserManager
+    
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +27,8 @@
         @{
 
         if(Convert.ToString(ViewContext.RouteData.Values["controller"]) != "Account"
-            && Convert.ToString(ViewContext.RouteData.Values["controller"]) != "Legal")
+            || Convert.ToString(ViewContext.RouteData.Values["action"]) == "AccountSite"
+            && Convert.ToString(ViewContext.RouteData.Values["controller"]) == "Account")
         {
 
         <div class="top_bar_div" id="input_top_bar_div">
@@ -44,27 +50,11 @@
             
         </div>
 
-        <div class="top_bar_div">
-            <ul id="top_bar_ul">
-                <li class="top_bar_li" id="home_nav_btn">
-                    <a asp-controller="Home" asp-action="Index" class="navbara">Home</a>
-                </li>
-                <li class="top_bar_li" id="shop_nav_btn">
-                    <a asp-controller="Shop" asp-action="Index" class="navbara">Shop</a>
-                </li>
-                <li class="top_bar_li" id="cart_nav_btn">   
-                    <a asp-controller="Cart" asp-action="Index" class="navbara">Cart</a>
-                </li>
-                <li class="top_bar_li" id="sign_in_nav_btn">
-                    <a asp-controller="Account" asp-action="SignIn" class="navbara">Sign In</a>
-                </li>
-            </ul>
-        </div>  
+        <partial name="_NavBarPartialView"></partial>
 
         }
         else
         {
-
             <div id="sign_in_page_sizer"></div>
             <partial name="_LoginPartialView"></partial>
 

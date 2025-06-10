@@ -1,5 +1,21 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityManager.Models.ApplicationUser> SignInManager
+@inject UserManager<IdentityManager.Models.ApplicationUser> UserManager
+
+@{
 
     ViewData["Title"] = "Home";
 
+}
+
+@{
+    if(SignInManager.IsSignedIn(User))
+    {
+        <p style="color: whitesmoke;">Hello @UserManager.GetUserName(User)</p>
+    }
+    else
+    {
+        <p style="color: whitesmoke;">Non Logged in</p>
+    }
 }

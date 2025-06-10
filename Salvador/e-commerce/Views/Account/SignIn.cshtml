@@ -1,31 +1,49 @@
-﻿@model RegisterViewModel
+﻿@model SignInViewModel
 @{
     ViewData["Title"] = "Sign In";
 }
 
 <div id="sign_in_container">
-    <div id="full_register_p_container">
+    <div id="sign_in_p_container">
         <p id="sign_in_p">Enter your email<br>to sign in</p>
     </div>
-    <div id="full_register_container"></div>
-        <div id="full_register_box">
-            <div id="full_register_box_child">
-                <h1 class="text-primary text-center pt-2" id="full_register_create_new_account_title">Sign In</h1>
-                <form method="post" asp-controller="Account" asp-action="SignIn" id="full_register_form">
+    <div id="sign_in_container_child"></div>
+        <div id="sign_in_box">
+            <div id="sign_in_box_child">
+                <h1 class="text-primary text-center pt-2" id="sign_in_title">Sign In</h1>
+                <div asp-validation-summary="ModelOnly" class="text-danger no-bullets" id="full_register_validation_summary_div"></div>
+                <form method="post" asp-controller="Account" asp-action="SignIn" id="sign_in_form" asp-route-returnurl="@ViewData["ReturnUrl"]">
 
-                    <div class="full_register_input_spacer_div">
+                    <div class="sign_in_input_spacer_div">
                         <label asp-for="Email" class="col-12"></label>
-                        <input asp-for="Email" class="full_register_input">
+                        <input asp-for="Email" class="sign_in_input">
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
 
-                    <div id="password_container">
+                    <div class="sign_in_input_spacer_div">
                         <label asp-for="Password" class="col-12"></label>
-                        <input asp-for="Password" class="full_register_input">
+                        <input asp-for="Password" class="sign_in_input">
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
 
-                    <button id="send_full_register_btn" type="submit">Continue</button> 
+                    <div class="form-group pt-2" id="remember_me_check_box">
+                        <div class="col-md-12">
+                            <div class="custom-checkbox">
+                                <label id="remember_me_label">
+                                    <input asp-for="RememberMe" />
+                                    <p>Remember me</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div id="button_and_forgot_password_id">
+                        <button id="send_sign_in_btn" type="submit">Continue</button> 
+                        <div id="sign_in_external_links_div">
+                            <a asp-controller="Account" asp-action="ForgotPassword" id="forgot_your_password_text">Forgot your password?</a>
+                            <a asp-controller="Account" asp-action="FullRegister" id="sign_in_register_text" asp-route-returnurl="@ViewData["ReturnUrl"]">Register as new user</a>
+                        </div>
+                    </div>
                     
                 </form>
             </div>
@@ -38,8 +56,6 @@
             await Html.RenderPartialAsync("_ValidationScriptsPartial");
         }
 }
-
-
 
 
 @*

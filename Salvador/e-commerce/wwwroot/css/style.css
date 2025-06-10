@@ -164,22 +164,32 @@ input:focus{
 
 /*=================== Register / Sign In / Register Button ===================*/
 /*Full Register Form*/
-#full_register_p_container
+#full_register_p_container,
+#sign_in_p_container
 {
-    width: 20%;
+    width: 30vw;
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 
-#full_register_container{
+#full_register_container,
+#sign_in_container_child{
     height: 72vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+}
+
+#sign_in_container{
+    height: 76vh; /*Original 76vh*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 .text-danger
@@ -209,7 +219,25 @@ input:focus{
     padding: 4vh 0 4vh 0;
 }
 
-#full_register_box_child{
+#sign_in_box{
+    background-color: rgb(60, 60, 60);
+    height: auto;
+    width: 40vw;
+    margin-left: 1vw;
+    border-radius: 0.5vw;
+    border: 0.5vh solid rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; 
+    color: whitesmoke;
+    padding: 4vh 0 4vh 0;
+}
+
+#full_register_box_child,
+#sign_in_box_child{
     width: 85%;
     height: inherit;
     display: flex;
@@ -218,7 +246,8 @@ input:focus{
     align-items: start;
 }
 
-#full_register_form
+#full_register_form,
+#sign_in_form
 {
     width: 100%;
     display: flex;
@@ -227,7 +256,8 @@ input:focus{
     align-items: start;
 }
 
-.full_register_input_spacer_div
+.full_register_input_spacer_div,
+.sign_in_input_spacer_div
 {
     width: 100%;
     height: auto;
@@ -245,7 +275,14 @@ input:focus{
     height: fit-content;
 }
 
-#password_container,
+#password_container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
 #confirm_password_container
 {
     width: 100%;
@@ -266,7 +303,8 @@ input:focus{
     margin-top: 1em;
 }
 
-.full_register_input{
+.full_register_input,
+.sign_in_input{
     width: 100%;
     box-sizing: border-box;
     height: 2.1em;
@@ -274,9 +312,64 @@ input:focus{
     border-radius: 0.5vw;
 }
 
+.full_register_password_input{
+    width: 95%;
+    box-sizing: border-box;
+    height: 2.1em;
+    font-size: 1.3em;
+    border-radius: 0.5vw;
+}
+
+.col-12{
+    margin: 0 0 0 0.3% !important;
+}
+
+#confirm_password_input,
+#confirm_password_label,
+#confirm_password_span{
+    margin-left: 5% !important;
+}
+
+#confirm_password_label{
+    margin-left: 6%;
+}
+
 #full_register_confirm_password
 {
     margin-bottom: 0;
+}
+
+#full_register_validation_summary_div{
+    width: 100% !important;
+}
+
+.validation-summary-errors ul,
+.validation-summary-errors li,
+#full_register_validation_summary_div ul,
+#full_register_validation_summary_div li {
+    list-style: none !important;
+    list-style-type: none !important;
+    list-style-image: none !important;
+    list-style-position: outside !important;
+    padding: 0 !important;
+    margin: 0 0 0 0.3% !important;
+    text-indent: 0 !important;
+    width: 100% !important;
+}
+
+/* Para elementos ::before y ::marker */
+.validation-summary-errors li::before,
+#full_register_validation_summary_div li::before {
+    content: none !important;
+    display: none !important;
+    width: 100% !important;
+}
+
+.validation-summary-errors li::marker,
+#full_register_validation_summary_div li::marker {
+    content: none !important;
+    display: none !important;
+    width: 100% !important;
 }
 
 #send_full_register_btn
@@ -293,7 +386,22 @@ input:focus{
     margin-top: 3vh;
 }
 
-#full_register_create_new_account_title
+#send_sign_in_btn{
+    width: 100%;
+    height: 2.1em;
+    color: whitesmoke;
+    background-color: rgb(50, 50, 228);
+    border-radius: 0.5vw;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 3vh;
+    margin-bottom: 0.5em;
+}
+
+#full_register_create_new_account_title,
+#sign_in_title
 {
     margin: 0;
 }
@@ -305,39 +413,66 @@ input:focus{
     display: contents;
 }
 
-#send_sign_in_btn
+#send_sign_in_btn:hover,
+#send_full_register_btn:hover{
+    background-color: rgb(70, 70, 248);  
+}
+
+#remember_me_check_box{
+    margin-top: 0.5em;
+    width: auto;
+    height: auto;
+}
+
+#remember_me_check_box input
 {
-    margin-top: 2.5vh;
-    width: 100%;
-    height: 13%;
-    color: whitesmoke;
-    background-color: rgb(50, 50, 228);
-    border-radius: 0.5vw;
-    border: none;
-    font-size: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+#remember_me_label
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 1em;
+    margin-top: 0.2em;
     cursor: pointer;
 }
 
-#send_sign_in_btn:hover{
-    background-color: rgb(70, 70, 248);  
+#button_and_forgot_password_id{
+    width: 100%;
+    height: auto;
+}
+
+#forgot_your_password_text,
+#sign_in_register_text{
+    color: rgb(90, 90, 268);
+    text-decoration: underline;
+}
+
+#sign_in_external_links_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#forgot_your_password_text:hover,
+#sign_in_register_text:hover{
+    color: rgb(120, 120, 298);
+    text-decoration: underline;
 }
 
 #sign_in_password{
     margin-bottom: 2.5vh;
 }
 
-.sign_in_input{
-    padding-left: 1vw;
-    width: 96%;
-    height: 12%;
-    font-size: 1.3em;
-    border-radius: 0.5vw;
-}
-
 #sign_in_p{
     color: rgb(220, 220, 220);
     font-size: 2.8em;
     font-weight: bold;
+    margin-right: 2vw;
 }
 
 #sign_in_text_container{
@@ -345,42 +480,6 @@ input:focus{
     width: 30vw; /*Original 30vw*/
     margin-bottom: 14vh;
     margin-right: 1vw;
-}
-
-#sign_in_box{
-    background-color: rgb(60, 60, 60);;
-    height: 50vh;
-    width: 40vw;
-    margin-left: 1vw;
-    border-radius: 0.5vw;
-    border: 0.5vh solid rgb(100, 100, 100);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-    color: whitesmoke;
-}
-
-#sign_in_container{
-    height: auto; /*Original 72vh*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#sign_in_box p{
-    margin-bottom: 0.6vh;
-    font-size: 1.2em;
-}
-
-#sign_in_box_child{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    text-align: left;
-    width: 90%;
-    height: 100%;
 }
 
 #sign_in_page_sizer{
@@ -623,6 +722,11 @@ input:focus{
 #terms_and_conditions_p{
     margin-left: 1%;       
     font-size: 1em !important;
+}
+
+/*Password recovery*/
+#password_recovery_enter_your_email_text{
+    font-size: 1.5em;
 }
 
 /*=================== Sign In Email Page ===================*/
