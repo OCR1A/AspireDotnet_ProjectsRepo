@@ -175,7 +175,10 @@ input:focus{
 }
 
 #full_register_container,
-#sign_in_container_child{
+#sign_in_container_child,
+#forgot_password_container,
+#password_recovery_container,
+#reset_password_container{
     height: 72vh;
     display: flex;
     flex-direction: column;
@@ -202,7 +205,9 @@ input:focus{
     color: rgb(250, 17, 17);
 }
 
-#full_register_box{
+#full_register_box,
+#password_recovery_box,
+#reset_password_box{
     background-color: rgb(60, 60, 60);
     height: auto;
     width: 40vw;
@@ -237,7 +242,9 @@ input:focus{
 }
 
 #full_register_box_child,
-#sign_in_box_child{
+#sign_in_box_child,
+#password_recovery_box_child,
+#reset_password_box_child{
     width: 85%;
     height: inherit;
     display: flex;
@@ -247,7 +254,9 @@ input:focus{
 }
 
 #full_register_form,
-#sign_in_form
+#sign_in_form,
+#password_recovery_form,
+#reset_password_form
 {
     width: 100%;
     display: flex;
@@ -257,7 +266,9 @@ input:focus{
 }
 
 .full_register_input_spacer_div,
-.sign_in_input_spacer_div
+.sign_in_input_spacer_div,
+.password_recovery_input_spacer_div,
+.reset_password_input_spacer_div
 {
     width: 100%;
     height: auto;
@@ -304,7 +315,9 @@ input:focus{
 }
 
 .full_register_input,
-.sign_in_input{
+.sign_in_input,
+.password_recovery_input,
+.reset_password_input{
     width: 100%;
     box-sizing: border-box;
     height: 2.1em;
@@ -312,7 +325,8 @@ input:focus{
     border-radius: 0.5vw;
 }
 
-.full_register_password_input{
+.full_register_password_input,
+.reset_password_password_input{
     width: 95%;
     box-sizing: border-box;
     height: 2.1em;
@@ -339,7 +353,9 @@ input:focus{
     margin-bottom: 0;
 }
 
-#full_register_validation_summary_div{
+#full_register_validation_summary_div,
+#password_recovery_validation_summary_div,
+#reset_password_validation_summary_div{
     width: 100% !important;
 }
 
@@ -372,7 +388,9 @@ input:focus{
     width: 100% !important;
 }
 
-#send_full_register_btn
+#send_full_register_btn,
+#send_password_recovery_btn,
+#send_reset_password_btn
 {
     width: 100%;
     height: 2.1em;
@@ -401,7 +419,9 @@ input:focus{
 }
 
 #full_register_create_new_account_title,
-#sign_in_title
+#sign_in_title,
+#password_recovery_title,
+#reset_password_title
 {
     margin: 0;
 }
@@ -414,7 +434,9 @@ input:focus{
 }
 
 #send_sign_in_btn:hover,
-#send_full_register_btn:hover{
+#send_full_register_btn:hover,
+#send_password_recovery_btn:hover,
+#send_reset_password_btn:hover{
     background-color: rgb(70, 70, 248);  
 }
 

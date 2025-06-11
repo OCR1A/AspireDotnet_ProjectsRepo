@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using IdentityManager.Services;
+using Microsoft.AspNetCore.Mvc.Diagnostics;
 
 
 namespace IdentityManager.Controllers
@@ -151,7 +152,7 @@ namespace IdentityManager.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpPost("password-recovery")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
         {
@@ -168,16 +169,52 @@ namespace IdentityManager.Controllers
                     userid = user.Id,
                     code
                 }, protocol: HttpContext.Request.Scheme);
-                _emailSender.SendEmailAsync(model.Email, "Reset Password - Identity Manager",
-                $"Please reset your password by clicking here: <a hreg='{callbackurl}'>link</a>");
+                Console.WriteLine($"Callbackurl: {callbackurl}");
+                await _emailSender.SendEmailAsync(model.Email, "Reset Password - Identity Manager",
+                                       $"Please reset your password using the following link: {callbackurl}");
+                return RedirectToAction("ForgotPasswordConfirmation", "Account");
             }
             return View(model);
         }
 
-        [HttpGet]
+        [Route("/password-recovery/reset-password")]
         public IActionResult ResetPassword(string code = null)
         {
-            return code == null ? View("Error") : View();
+            return code == null ? RedirectToAction("ForgotPassword", "Account") : View();
+        }
+
+        [HttpPost("/password-recovery/reset-password")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if (user == null)
+                {
+                    return RedirectToAction("ResetPasswordConfirmation", "Account");
+                }
+
+                var result = await _userManager.ResetPasswordAsync(user, model.Code, model.Password);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("ResetPasswordConfirmation", "Account");
+                }
+                AddErrors(result);
+            }
+            return View();
+        }
+
+        [Route("/password-recovery/forgot-password-confirmation")]
+        public IActionResult ForgotPasswordConfirmation()
+        {
+            return View();
+        }
+
+        [Route("/password-recovery/reset-password-confirmation")]
+        public IActionResult ResetPasswordConfirmation()
+        {
+            return View();
         }
 
         private void AddErrors(IdentityResult result)
@@ -193,80 +230,3 @@ namespace IdentityManager.Controllers
     }
 
 }
-/*using Microsoft.AspNetCore.Mvc;
-using IdentityManager.Models;
-using IdentityManager.Models.ViewModels;
-
-namespace IdentityManager.Controllers
-{
-
-    public class AccountController : Controller
-    {
-
-        [Route("/sign-in")]
-        public IActionResult SignIn()
-        {
-            return View();
-        }
-
-        [HttpPost("/sign-in")]
-        public IActionResult SignIn(ApplicationUser myPerson)
-        {
-
-            if (!ModelState.IsValid)
-            {
-
-                foreach (var value in ModelState.Values)
-                {
-
-                    foreach (var error in value.Errors)
-                    {
-                        Console.WriteLine(error.ErrorMessage);
-                    }
-
-                }
-
-                Console.WriteLine();
-                return BadRequest();
-
-            }
-
-            Console.WriteLine($"User: {myPerson.Email} logged in successfully!");
-            return Json(myPerson);
-
-        }
-
-        //Register account controllers
-        [Route("/register-hub")]
-        public IActionResult RegisterHub()
-        {
-            return View();
-        }
-
-        [Route("/register-email")]
-        public IActionResult RegisterEmail()
-        {
-            return View();
-        }
-
-        [Route("/register-name")]
-        public IActionResult RegisterName()
-        {
-            return Content("<h2>Register name:</h2>", "text/html");
-        }
-
-        [Route("/register-cellphone")]
-        public IActionResult RegisterCellphone()
-        {
-            return Content("<h2>Register Cellphone:</h2>", "text/html");
-        }
-
-        [Route("/register-password")]
-        public IActionResult RegisterPassword()
-        {
-            return Content("<h2>Register Password:</h2>", "text/html");
-        }
-    
-    }
-
-}*/

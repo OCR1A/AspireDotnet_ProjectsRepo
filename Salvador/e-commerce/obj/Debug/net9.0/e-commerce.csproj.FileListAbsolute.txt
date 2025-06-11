@@ -166,7 +166,7 @@ C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\zh-Hant\M
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\MySqlConnector.dll
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\114385iq2y-ptudif7w8r.gz
-C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\w1dja932ih-jgk2a97xqv.gz
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\MailKit.dll
 C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\bin\Debug\net9.0\MimeKit.dll
+C:\Users\salvador.castro.ASPIRESYS\Desktop\e-commerce\obj\Debug\net9.0\compressed\w1dja932ih-w636m63ns0.gz

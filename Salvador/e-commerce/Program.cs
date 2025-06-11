@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 //Email Sender
-builder.Services.AddScoped<IEmailSender, EmailSender>();
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 //MySql needed Services set up
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
