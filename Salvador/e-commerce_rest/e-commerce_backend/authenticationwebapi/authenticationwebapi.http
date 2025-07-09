@@ -1,0 +1,39 @@
+Por qué me salen estos errores: main.ts:5 ERROR ɵNotFound: R3InjectorError(Standalone[_App])[_AuthService -> _AuthService -> _HttpClient -> _HttpClient]: 
+  NullInjectorError: No provider for _HttpClient!
+    at NullInjector.get (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1221:21)
+    at R3Injector.get (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1575:27)
+    at R3Injector.get (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1575:27)
+    at R3Injector.retrieve (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1480:19)
+    at injectInjectorOnly (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:983:35)
+    at Module.ɵɵinject (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:995:59)
+    at Object.AuthService_Factory [as factory] (http://localhost:4200/main.js:80:55)
+    at http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1675:35
+    at runInInjectorProfilerContext (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:852:5)
+    at R3Injector.hydrate (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1673:11)
+handleError @ root_effect_scheduler.mjs:3517
+(anonymous) @ debug_node.mjs:29558
+runOutsideAngular @ debug_node.mjs:16578
+(anonymous) @ debug_node.mjs:29550
+(anonymous) @ core.mjs:1011
+runOutsideAngular @ debug_node.mjs:16578
+(anonymous) @ core.mjs:1011
+Promise.catch
+_callAndReportToErrorHandler @ core.mjs:1010
+(anonymous) @ core.mjs:945
+run @ debug_node.mjs:16572
+bootstrap @ core.mjs:904
+internalCreateApplication @ core.mjs:2655
+bootstrapApplication @ browser.mjs:430
+(anonymous) @ main.ts:5Understand this error
+main.ts:6 ɵNotFound: R3InjectorError(Standalone[_App])[_AuthService -> _AuthService -> _HttpClient -> _HttpClient]: 
+  NullInjectorError: No provider for _HttpClient!
+    at NullInjector.get (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1221:21)
+    at R3Injector.get (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1575:27)
+    at R3Injector.get (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1575:27)
+    at R3Injector.retrieve (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1480:19)
+    at injectInjectorOnly (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:983:35)
+    at Module.ɵɵinject (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:995:59)
+    at Object.AuthService_Factory [as factory] (http://localhost:4200/main.js:80:55)
+    at http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1675:35
+    at runInInjectorProfilerContext (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:852:5)
+    at R3Injector.hydrate (http://localhost:4200/@fs/C:/Users/Desktop/e-commerce_rest/ecommerce_frontend/.angular/cache/20.0.5/ecommerce_frontend/vite/deps/chunk-SZHVGFCT.js?v=c60915e1:1673:11
