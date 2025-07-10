@@ -4,6 +4,7 @@ using IdentityManager.Models;
 using IdentityManager.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -14,8 +15,11 @@ var builder = WebApplication.CreateBuilder(args);
 //Self Made services
 builder.Services.AddScoped<AuthenticationService>();
 builder.Services.AddScoped<JwtService>();
+builder.Services.AddScoped<EmailSenderService>();
 
 //Additional services
+builder.Services.AddTransient<IEmailSender, EmailSenderService>();
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddSingleton<HashIdService>();
 builder.Services.AddAuthorization();
 builder.Services.AddCors(options =>

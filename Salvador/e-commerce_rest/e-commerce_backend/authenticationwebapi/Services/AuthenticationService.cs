@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+using IdentityManager.DTOs;
 using IdentityManager.DTOs.AuthenticationDTOs;
 using IdentityManager.Models;
 using Microsoft.AspNetCore.Identity;
@@ -11,11 +13,16 @@ namespace IdentityManager.Services
         //Dependency Injection
         private readonly JwtService _jwtService;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly EmailSenderService _emailSenderService;
 
-        public AuthenticationService(JwtService jwtService, UserManager<ApplicationUser> userManager)
+        public AuthenticationService(JwtService jwtService,
+            UserManager<ApplicationUser> userManager,
+            EmailSenderService emailSenderService
+        )
         {
             _jwtService = jwtService;
             _userManager = userManager;
+            _emailSenderService = emailSenderService;
         }
 
         //Register new user
@@ -41,7 +48,8 @@ namespace IdentityManager.Services
 
                 UserName = dto.Email,
                 Email = dto.Email,
-                DateCreated = DateTime.Today,
+                Name = dto.Name,
+                DateCreated = DateTime.Today
 
             };
 
@@ -49,16 +57,27 @@ namespace IdentityManager.Services
 
             if (result.Succeeded)
             {
-                var jwtToken = _jwtService.GenerateJwtToken(dto.Email);
-                return new()
+                var emailConfirmationUrl = await _emailSenderService.generateEmailConfirmationUrlAndSendToEmail(dto);
+                if (emailConfirmationUrl.Success == true)
                 {
-                    JwtToken = jwtToken,
-                    Success = true,
-                    ErrorMessage = null,
+                    return new AuthenticationServiceResult
+                    {
+                        JwtToken = null,
+                        Success = true,
+                        ErrorMessage = null,
+                        OperationDate = DateTime.Now
+                    };
+                }
+
+                return new AuthenticationServiceResult
+                {
+                    JwtToken = null,
+                    Success = false,
+                    ErrorMessage = "Unable to send confirmation email",
                     OperationDate = DateTime.Now
                 };
-            }
 
+            }
 
             string fullError = "";
 
@@ -98,10 +117,10 @@ namespace IdentityManager.Services
             var user = await _userManager.FindByEmailAsync(dto.Email);
             if (user != null)
             {
-
+                var ConfirmedEmail = await _userManager.IsEmailConfirmedAsync(user);
                 var rightCreddentials = await _userManager.CheckPasswordAsync(user, dto.Password);
 
-                if (rightCreddentials)
+                if (rightCreddentials && ConfirmedEmail)
                 {
                     var jwtToken = _jwtService.GenerateJwtToken(dto.Email);
                     return new AuthenticationServiceResult()
@@ -112,14 +131,26 @@ namespace IdentityManager.Services
                         OperationDate = DateTime.Now
                     };
                 }
-
-                return new AuthenticationServiceResult()
+                else if (!rightCreddentials)
                 {
-                    JwtToken = null,
-                    Success = false,
-                    ErrorMessage = "Incorrect User or Password",
-                    OperationDate = DateTime.Now
-                };
+                    return new AuthenticationServiceResult()
+                    {
+                        JwtToken = null,
+                        Success = false,
+                        ErrorMessage = "Incorrect User or Password.",
+                        OperationDate = DateTime.Now
+                    };
+                }
+                else if (!ConfirmedEmail)
+                {
+                    return new AuthenticationServiceResult()
+                    {
+                        JwtToken = null,
+                        Success = false,
+                        ErrorMessage = "Email not confirmed yet.",
+                        OperationDate = DateTime.Now
+                    };
+                }
 
             }
 
@@ -132,7 +163,66 @@ namespace IdentityManager.Services
             };
 
         }
-        
+
+        public async Task<AuthenticationServiceResult> ConfirmEmail(ConfirmEmailDto dto)
+        {
+
+            if (dto.UserId == null || dto.ConfirmEmailToken == null)
+            {
+                return new AuthenticationServiceResult
+                {
+                    JwtToken = null,
+                    Success = false,
+                    ErrorMessage = "UserId and code cannot be null",
+                    OperationDate = DateTime.Now,
+                    Token = null,
+                    UserId = null
+                };
+            }
+
+            var user = await _userManager.FindByIdAsync(dto.UserId);
+
+            if (user == null)
+            {
+                return new AuthenticationServiceResult
+                {
+                    JwtToken = null,
+                    Success = false,
+                    ErrorMessage = "User not found.",
+                    OperationDate = DateTime.Now,
+                    Token = null,
+                    UserId = null
+                };
+            }
+
+            var undecodedCode = Base64UrlSafe.Decode(dto.ConfirmEmailToken);
+
+            var result = await _userManager.ConfirmEmailAsync(user, undecodedCode);
+
+            if (!result.Succeeded)
+            {
+                return new AuthenticationServiceResult
+                {
+                    JwtToken = null,
+                    Success = false,
+                    ErrorMessage = "Cannot confirm email.",
+                    OperationDate = DateTime.Now,
+                    Token = null,
+                    UserId = null
+                };
+            }
+
+            return new AuthenticationServiceResult
+            {
+                JwtToken = null,
+                Success = true,
+                ErrorMessage = null,
+                OperationDate = DateTime.Now,
+                Token = null,
+                UserId = null
+            };
+
+        }
 
     }
 
@@ -145,6 +235,8 @@ public class AuthenticationServiceResult
     public bool Success { get; set; }
     public string? ErrorMessage { get; set; }
     public DateTime OperationDate { get; set; }
+    public string? Token { get; set; }
+    public int? UserId { get; set; }
 
 }
 

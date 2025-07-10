@@ -1,16 +1,14 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace IdentityManager.DTOs
+namespace Account.DTOs.AccountDTOs
 {
 
-    public class ConfirmEmailDto
+    public class ForgotPasswordDto
     {
 
         [Required]
+        [EmailAddress]
         public string? Email { get; set; }
-
-        [Required]
-        public string? Code { get; set; }
 
     }
 

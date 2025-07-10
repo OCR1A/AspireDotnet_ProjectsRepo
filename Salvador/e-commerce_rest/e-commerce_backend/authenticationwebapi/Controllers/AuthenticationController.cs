@@ -1,12 +1,16 @@
+using System.Threading.Tasks;
+using IdentityManager.DTOs;
 using IdentityManager.DTOs.AuthenticationDTOs;
 using IdentityManager.Services;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Org.BouncyCastle.Asn1.Esf;
 
 namespace IdentityManager.Controllers
 {
 
     [ApiController]
-    [Route("/authentication/[controller]")]
+    [Route("/authentication")]
     public class AuthenticationController : ControllerBase
     {
 
@@ -31,6 +35,27 @@ namespace IdentityManager.Controllers
 
             var result = await _authService.SignIn(dto);
             return result.Success == true ? Ok(result) : BadRequest(result);
+
+        }
+
+        [HttpPost("confirm-email")]
+        public async Task<IActionResult> ConfirmEmailRoute([FromBody] ConfirmEmailDto dto)
+        {
+
+            if (dto.ConfirmEmailToken == null || dto.UserId == null)
+            {
+                return BadRequest("UserId and code cannot be null.");
+            }
+
+            var result = await _authService.ConfirmEmail(dto);
+
+            if (!result.Success)
+            {
+                return BadRequest(result);
+            }
+
+            Console.WriteLine($"[DEBUG] User email confirmed successfully!");
+            return Ok(result);
 
         }
 

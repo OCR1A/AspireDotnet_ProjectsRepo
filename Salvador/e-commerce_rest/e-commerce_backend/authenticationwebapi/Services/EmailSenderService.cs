@@ -1,10 +1,13 @@
+using System.Text;
 using IdentityManager.DTOs;
+using IdentityManager.DTOs.AuthenticationDTOs;
 using IdentityManager.Models;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using MimeKit;
+using Org.BouncyCastle.Crypto.Utilities;
 
 namespace IdentityManager.Services
 {
@@ -13,11 +16,16 @@ namespace IdentityManager.Services
 
         private readonly IConfiguration _configuration;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public EmailSenderService(IConfiguration configuration, UserManager<ApplicationUser> userManager)
+        public EmailSenderService(IConfiguration configuration,
+            UserManager<ApplicationUser> userManager,
+            IHttpContextAccessor httpContextAccessor
+        )
         {
             _configuration = configuration;
             _userManager = userManager;
+            _httpContextAccessor = httpContextAccessor;
         }
         public async Task SendEmailAsync(string to, string subject, string body)
         {
@@ -41,48 +49,59 @@ namespace IdentityManager.Services
 
         }
 
-        public async Task<EmailSenderServiceResult> ConfirmEmail(ConfirmEmailDto dto)
+        public async Task<EmailSenderServiceResult> generateEmailConfirmationUrlAndSendToEmail(RegisterDto dto)
         {
 
-            if (dto.Email == null || dto.Code == null)
+            var user = await _userManager.FindByEmailAsync(dto.Email!);
+            var userId = await _userManager.GetUserIdAsync(user!);
+
+            if (user == null || userId == null)
             {
+
                 return new EmailSenderServiceResult
                 {
                     Success = false,
-                    ErrorMessage = "Email and code cannot be empty",
+                    ErrorMessage = "User cannot be null",
                     OperationDate = DateTime.Now
                 };
+
             }
 
-            var user = await _userManager.FindByEmailAsync(dto.Email);
-            if (user == null)
-            {
-                return new EmailSenderServiceResult
-                {
-                    Success = false,
-                    ErrorMessage = "User not found",
-                    OperationDate = DateTime.Now
-                };
-            }
-            var result = await _userManager.ConfirmEmailAsync(user, dto.Code);
-            if (result.Succeeded)
-            {
-                return new EmailSenderServiceResult
-                {
-                    Success = true,
-                    ErrorMessage = "Email sent",
-                    OperationDate = DateTime.Now
-                };
-            }
+            var confirmationToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var confirmationUrl = GenerateEmailConfirmationUrl(userId, confirmationToken);
+            Console.WriteLine($"[DEBUG] Confirm Email URL: {confirmationUrl}");
+
+            await SendEmailAsync(dto.Email!,
+                "Confirm Email - Identity Manager",
+                $"Please confirm your email by clicking the following link: {confirmationUrl}");
 
             return new EmailSenderServiceResult
             {
-                Success = false,
-                ErrorMessage = "Unhandled exception",
-                OperationDate = DateTime.Now
+                Success = true,
+                ErrorMessage = null,
+                OperationDate = DateTime.Now,
+                ConfirmationUrl = confirmationUrl,
+                UrlToUndecode = confirmationUrl
             };
 
         }
+
+        private string GenerateEmailConfirmationUrl(string userId, string token)
+        {
+            var request = _httpContextAccessor.HttpContext?.Request;
+            string baseUrl = "http://localhost:4200";
+
+            // Base64 URL-safe - SIN caracteres problemáticos
+            var tokenBytes = Encoding.UTF8.GetBytes(token);
+            var safeToken = Convert.ToBase64String(tokenBytes)
+                .TrimEnd('=')        // Quitar =
+                .Replace('+', '-')   // Quitar +
+                .Replace('/', '_');  // Quitar /
+
+            return $"{baseUrl}/confirm-email?userId={userId}&code={safeToken}";
+            
+        }
+
     }
 }
 
@@ -91,6 +110,32 @@ public class EmailSenderServiceResult
 
     public bool Success { get; set; }
     public string? ErrorMessage { get; set; }
+    public string? ConfirmationUrl { get; set; }
     public DateTime OperationDate { get; set; }
+    public string? UrlToUndecode { get; set; }
 
+}
+
+public static class Base64UrlSafe
+{
+    public static string Encode(string text)
+    {
+        var bytes = Encoding.UTF8.GetBytes(text);
+        return Convert.ToBase64String(bytes)
+            .TrimEnd('=')
+            .Replace('+', '-')
+            .Replace('/', '_');
+    }
+    
+public static string Decode(string encoded)
+    {
+        var base64 = encoded.Replace('-', '+').Replace('_', '/');
+        switch (base64.Length % 4)
+        {
+            case 2: base64 += "=="; break;
+            case 3: base64 += "="; break;
+        }
+        var bytes = Convert.FromBase64String(base64);
+        return Encoding.UTF8.GetString(bytes);
+    }
 }
