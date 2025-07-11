@@ -1,5 +1,5 @@
 using System.Text;
-using IdentityManager.DTOs;
+using Account.DTOs.AccountDTOs;
 using IdentityManager.DTOs.AuthenticationDTOs;
 using IdentityManager.Models;
 using MailKit.Net.Smtp;
@@ -7,7 +7,6 @@ using MailKit.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using MimeKit;
-using Org.BouncyCastle.Crypto.Utilities;
 
 namespace IdentityManager.Services
 {
@@ -27,6 +26,8 @@ namespace IdentityManager.Services
             _userManager = userManager;
             _httpContextAccessor = httpContextAccessor;
         }
+
+        //Method to Send Email
         public async Task SendEmailAsync(string to, string subject, string body)
         {
             var user = _configuration["MailSenderConfig:Username"];
@@ -49,6 +50,7 @@ namespace IdentityManager.Services
 
         }
 
+        //Send URL to confirm email to user e-mail
         public async Task<EmailSenderServiceResult> generateEmailConfirmationUrlAndSendToEmail(RegisterDto dto)
         {
 
@@ -68,7 +70,7 @@ namespace IdentityManager.Services
             }
 
             var confirmationToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            var confirmationUrl = GenerateEmailConfirmationUrl(userId, confirmationToken);
+            var confirmationUrl = GenerateConfirmationUrl(userId, confirmationToken, "confirm-email");
             Console.WriteLine($"[DEBUG] Confirm Email URL: {confirmationUrl}");
 
             await SendEmailAsync(dto.Email!,
@@ -86,9 +88,47 @@ namespace IdentityManager.Services
 
         }
 
-        private string GenerateEmailConfirmationUrl(string userId, string token)
+        //Send URL to confirm password change
+        public async Task<EmailSenderServiceResult> generateForgotPasswordConfirmationUrlAndSendToEmail(ForgotPasswordDto dto)
         {
-            var request = _httpContextAccessor.HttpContext?.Request;
+
+            var user = await _userManager.FindByEmailAsync(dto.Email!);
+            var userId = await _userManager.GetUserIdAsync(user!);
+
+            if (user == null || userId == null)
+            {
+
+                return new EmailSenderServiceResult
+                {
+                    Success = false,
+                    ErrorMessage = "User cannot be null",
+                    OperationDate = DateTime.Now
+                };
+
+            }
+
+            var confirmationToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var confirmationUrl = GenerateConfirmationUrl(userId, confirmationToken, "reset-password");
+            Console.WriteLine($"[DEBUG] Confirm Forgot Password URL: {confirmationUrl}");
+
+            await SendEmailAsync(dto.Email!,
+                "Change your password - Identity Manager",
+                $"Recover your password by clicking the following link: {confirmationUrl}");
+
+            return new EmailSenderServiceResult
+            {
+                Success = true,
+                ErrorMessage = null,
+                OperationDate = DateTime.Now,
+                ConfirmationUrl = confirmationUrl,
+                UrlToUndecode = confirmationUrl
+            };
+
+        }
+
+        //Method to generate a Base64 URL
+        private string GenerateConfirmationUrl(string userId, string token, string urlEndpoint)
+        {
             string baseUrl = "http://localhost:4200";
 
             // Base64 URL-safe - SIN caracteres problemáticos
@@ -98,11 +138,11 @@ namespace IdentityManager.Services
                 .Replace('+', '-')   // Quitar +
                 .Replace('/', '_');  // Quitar /
 
-            return $"{baseUrl}/confirm-email?userId={userId}&code={safeToken}";
-            
+            return $"{baseUrl}/{urlEndpoint}?userId={userId}&code={safeToken}";
         }
 
     }
+
 }
 
 public class EmailSenderServiceResult

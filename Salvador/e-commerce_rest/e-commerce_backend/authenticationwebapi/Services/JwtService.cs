@@ -16,14 +16,14 @@ namespace IdentityManager.Services
             _config = config;
         }
 
-        public string GenerateJwtToken(string username)
+        public string GenerateJwtToken(string username, bool emailConfirmed)
         {
             var claims = new[]
             {
             new Claim(JwtRegisteredClaimNames.Sub, username),   //UserName claim
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()) //Guid Claim
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()), //Guid Claim
+            new Claim("email_confirmed", emailConfirmed.ToString().ToLower())
             };
-
 
             var jwtSection = _config.GetSection("Jwt");
             var configKey = jwtSection["Key"];

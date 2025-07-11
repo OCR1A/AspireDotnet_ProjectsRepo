@@ -1,5 +1,6 @@
 using System.Runtime.CompilerServices;
 using System.Security.Claims;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Account.DTOs.AccountDTOs;
 using IdentityManager.Models;
@@ -7,6 +8,7 @@ using IdentityManager.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using PasswordManager.Services;
 
 namespace Account.Controllers
 {
@@ -18,13 +20,17 @@ namespace Account.Controllers
 
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly EmailSenderService _emailSenderService;
+        private readonly PasswordManagerService _passwordManagerService;
 
-        public AccountController(UserManager<ApplicationUser> userManager,
-            EmailSenderService emailSenderService
+        public AccountController(
+            UserManager<ApplicationUser> userManager,
+            EmailSenderService emailSenderService,
+            PasswordManagerService passwordManagerService
         )
         {
             _userManager = userManager;
             _emailSenderService = emailSenderService;
+            _passwordManagerService = passwordManagerService;
         }
 
         [Authorize]
@@ -47,6 +53,16 @@ namespace Account.Controllers
             };
 
             return Ok(dto);
+
+        }
+
+        [HttpPost("forgot-password")]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordDto dto)
+        {
+
+            var result = await _passwordManagerService.ForgotPasswordRoute(dto);
+
+            return result.Success ? Ok(result) : BadRequest(result);
 
         }
 

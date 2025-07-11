@@ -3,6 +3,7 @@ using IdentityManager.DTOs;
 using IdentityManager.DTOs.AuthenticationDTOs;
 using IdentityManager.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace IdentityManager.Services
 {
@@ -122,13 +123,14 @@ namespace IdentityManager.Services
 
                 if (rightCreddentials && ConfirmedEmail)
                 {
-                    var jwtToken = _jwtService.GenerateJwtToken(dto.Email);
+                    var jwtToken = _jwtService.GenerateJwtToken(dto.Email, true);
                     return new AuthenticationServiceResult()
                     {
                         JwtToken = jwtToken,
                         Success = true,
                         ErrorMessage = null,
-                        OperationDate = DateTime.Now
+                        OperationDate = DateTime.Now, 
+                        EmailConfirmed = ConfirmedEmail
                     };
                 }
                 else if (!rightCreddentials)
@@ -141,14 +143,16 @@ namespace IdentityManager.Services
                         OperationDate = DateTime.Now
                     };
                 }
-                else if (!ConfirmedEmail)
+                else if (rightCreddentials && !ConfirmedEmail)
                 {
+                    var jwtToken = _jwtService.GenerateJwtToken(dto.Email, false);
                     return new AuthenticationServiceResult()
                     {
-                        JwtToken = null,
-                        Success = false,
+                        JwtToken = jwtToken,
+                        Success = true,
                         ErrorMessage = "Email not confirmed yet.",
-                        OperationDate = DateTime.Now
+                        OperationDate = DateTime.Now,
+                        EmailConfirmed = ConfirmedEmail
                     };
                 }
 
@@ -164,6 +168,7 @@ namespace IdentityManager.Services
 
         }
 
+        //Method to confirm your email 
         public async Task<AuthenticationServiceResult> ConfirmEmail(ConfirmEmailDto dto)
         {
 
@@ -195,15 +200,18 @@ namespace IdentityManager.Services
                 };
             }
 
+            var userName = user.Name != null ? user.Name : "Not Found";
+
             var undecodedCode = Base64UrlSafe.Decode(dto.ConfirmEmailToken);
 
             var result = await _userManager.ConfirmEmailAsync(user, undecodedCode);
 
             if (!result.Succeeded)
             {
+                var newJwtToken = _jwtService.GenerateJwtToken(userName, true);
                 return new AuthenticationServiceResult
                 {
-                    JwtToken = null,
+                    JwtToken = newJwtToken,
                     Success = false,
                     ErrorMessage = "Cannot confirm email.",
                     OperationDate = DateTime.Now,
@@ -219,7 +227,8 @@ namespace IdentityManager.Services
                 ErrorMessage = null,
                 OperationDate = DateTime.Now,
                 Token = null,
-                UserId = null
+                UserId = null,
+                EmailConfirmed = true
             };
 
         }
@@ -237,6 +246,7 @@ public class AuthenticationServiceResult
     public DateTime OperationDate { get; set; }
     public string? Token { get; set; }
     public int? UserId { get; set; }
+    public bool? EmailConfirmed { get; set; }
 
 }
 

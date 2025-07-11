@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using PasswordManager.Services;
 using ProductsWebApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<AuthenticationService>();
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<EmailSenderService>();
+builder.Services.AddScoped<PasswordManagerService>();
 
 //Additional services
 builder.Services.AddTransient<IEmailSender, EmailSenderService>();
